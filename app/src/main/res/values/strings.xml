@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Guess the Number</string>
+
+    <string name="play_btn">Play</string>
+    <string name="settings_btn">Settings</string>
+
+    <string name="about_btn">About</string>
+    <string name="about_content">Guess a number from 1 to 100 in 7 tries.\n\nMantas Klevinskas IFAi-7, KTU.</string>
+
+    <string name="number_was_low">Guessed number was %d and was too low.</string>
+    <string name="number_was_high">Guessed number was %d and was too high.</string>
+
+    <string name="win_game_over">YOU WIN!</string>
+
+    <string name="lose_game_over">YOU LOSE!</string>
+    <string name="lose_content">Better luck next time!</string>
+
+    <string name="guess_btn">Guess</string>
+    <string name="guess_result_text">Guess result</string>
+    <string name="guess_range_text">Type a number from %d to %d</string>
+    <string name="turns_left_text">Turns left: %d</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_name">Player name:</string>
+    <string name="settings_age">Player age:</string>
+
+    <string name="leaderboard_title">Leaderboard</string>
+    <string name="leaderboard_online_title">Online Leaderboard</string>
+    <string name="leaderboard_btn">Leaderboard</string>
+    <string name="leaderboard_empty">Leaderboard is empty.</string>
+</resources>
