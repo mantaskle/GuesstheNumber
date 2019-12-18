@@ -67,7 +67,7 @@ public class SettingsActivity extends AppCompatActivity {
             Log.d("PATH", "onCreate: " + profilePicturePath);
             setPic(profilePicturePath, profilePicture);
         } else {
-            profilePicture.setBackgroundColor(Color.BLACK);
+            profilePicture.setImageResource(R.drawable.profile_pic);
         }
     }
 
@@ -92,7 +92,13 @@ public class SettingsActivity extends AppCompatActivity {
 
         prefsEditor.putString(KEY_NAME, name);
         prefsEditor.putInt(KEY_AGE, age);
-        prefsEditor.putString(KEY_PATH, currentPhotoPath);
+        if (currentPhotoPath == null)
+        {
+            String profilePicturePath = sharedPrefs.getString(KEY_PATH, null);
+            prefsEditor.putString(KEY_PATH, profilePicturePath);
+        }
+        else
+            prefsEditor.putString(KEY_PATH, currentPhotoPath);
 
         prefsEditor.apply();
     }
